@@ -3,39 +3,27 @@
 #include <string.h>
 #include "lib.h"
 
-int my_strcmp(char const *s1, char const *s2)
+int my_strcmp(char *s1, char *s2)
 {
     int i;
     int s3 = 0;
     for (i = 0 ; s1[i] != '\0' ; i++ )
     {
         if(s1[i] - s2[i] > 0)
-        {
-            s3++;
-        }
+        {s3++;}
+
         if(s1[i] - s2[i] < 0)
-        {
-            s3--;
-        }
+        {s3--;}
+
         if(s1[i] - s2[i] == 0)
-        {
-            s3 = s3;
-        }
+        {s3 = s3;} 
     }
-    printf("%d\n",s3);
-    if (s3 < 0)
-    {
-        printf("s2 is more great");
-    }
-    
-    if (s3 == 0)
-    {
-        printf("s1 = s2");
-    }    
-    
     if (s3 > 0)
-    {
-        printf("s1 is more great");
-    }
-    return s3;
+        {return 1;}
+
+        if (s3 < 0)
+        {return -1;}
+
+        else
+        {return 0;}
 }
