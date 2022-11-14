@@ -42,22 +42,10 @@ public class MainJframe {
         jFrame.setLayout(null);
         jFrame.setVisible(true);
 
-
-        // bouton option
-        JButton btn2 = new JButton("Option");
-        //Set button position
-        btn2.setBounds(50,240,300,50);
-        //Add button to frame
-        jFrame.add(btn2);
-        // mise en page
-        jFrame.setLayout(null);
-        jFrame.setVisible(true);
-
-
         // bouton statistique
         JButton btn3 = new JButton("Statistique");
         //Set button position
-        btn3.setBounds(50,310,300,50);
+        btn3.setBounds(50,240,300,50);
         //Add button to frame
         jFrame.add(btn3);
         // mise en page
@@ -68,7 +56,7 @@ public class MainJframe {
         // bouton mod
         JButton btn4 = new JButton("Mod");
         //Set button position
-        btn4.setBounds(50,380,300,50);
+        btn4.setBounds(50,310,300,50);
         //Add button to frame
         jFrame.add(btn4);
         // mise en page
@@ -78,7 +66,7 @@ public class MainJframe {
         // bouton quitter
         JButton btn5 = new JButton("Quitter");
         //Set button position
-        btn5.setBounds(50,450,300,50);
+        btn5.setBounds(50,380,300,50);
         //Add button to frame
         jFrame.add(btn5);
         // mise en page
